@@ -11,28 +11,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
 <body>
     <header class="headbar">
-        <a href="#" class="logo">Leon</a>
+        <a href="#" class="logo">Leon Schropp</a>
     <nav class="navbar">
-        <a href="">Home</a>
+        <a href="https://leonschropp.github.io/leonschropp/">Home</a>
         <a href="#">CV</a>  <!--unter href kannst du dann die html seite für deinen CV verlinken/oder gleich einfach nur das PDF-->
-        <a href="#">Projects</a>  <!--unter href kannst du dann die html seite für deine Projekte verlinken-->
+        <a href="https://leonschropp.github.io/leonschropp/projects">Projects</a>  <!--unter href kannst du dann die html seite für deine Projekte verlinken-->
         <a href="https://leonschropp.github.io/leonschropp/contact" class="active">Contact</a>
     </nav>
 </header>
 <section class="contact">
+    <script>
+        var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
+        const form = document.getElementById("email");
+        form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+    </script>
     <div class="contact-content">
         <div class="text">
             <h3>Get in touch</h3>
             <p class="Myname">Leon Schropp</p>
             <div class="contactdates">
-                <p>Mobile:<br>E-Mail:</p>
+                <p>Mobile:<br>University E-Mail<br>Personal E-Mail</p>
             </div>
             <div class="contactdates">
-                <p>+49 1575 7063237<br>leon.schropp@t-online.de</p>
+                 <p>+49 157 570 632 37 <br> forename.lastname@t-online.de</p>
+                 <                
+            
+                <p></p>
             </div>
         </div>
         <div class="home-contacts">
-            <a href="mailto:leon.schropp@t-online.de"><i class='bx bxs-envelope'></i></a>
+            <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
             <a href="tel:+4915757063237"><i class='bx bxs-phone'></i></a>
         </div>
     </div>
