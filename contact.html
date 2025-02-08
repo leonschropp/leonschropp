@@ -20,11 +20,6 @@
     </nav>
 </header>
 <section class="contact">
-    <script>
-        var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
-        const form = document.getElementById("email");
-        form.setAttribute("href", "mailto:".concat(atob(encEmail)));
-    </script>
     <div class="contact-content">
         <div class="text">
             <h3>Get in touch</h3>
@@ -38,6 +33,11 @@
                 <p></p>
             </div>
         </div>
+        <script>
+            var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
+            const form = document.getElementById("email");
+            form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+        </script>
         <div class="home-contacts">
             <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
             <a href="tel:+4915757063237"><i class='bx bxs-phone'></i></a>
