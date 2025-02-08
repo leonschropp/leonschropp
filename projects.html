@@ -34,8 +34,13 @@
         <div class="Academic Talks">
             <p> Lurie's Straightening Unstraightening Equivalence</p>
         </div>
+        <script>
+            var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
+            const form = document.getElementById("email");
+            form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+        </script>
         <div class="home-contacts">
-            <a href="mailto:leon.schropp@t-online.de"><i class='bx bxs-envelope'></i></a>
+            <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
             <a href="tel:+4915757063237"><i class='bx bxs-phone'></i></a>
         </div>
     </div>

@@ -12,12 +12,12 @@
 </head>
 <body>
     <header class="headbar">
-        <a href="#" class="logo">Leon.</a>
+        <a href="#" class="logo">Leon Schropp</a>
     <nav class="navbar">
         <a href="https://leonschropp.github.io/leonschropp/" class="active">Home</a>
         <a href="#">CV</a>  <!--unter href kannst du dann die html seite für deinen CV verlinken/oder gleich einfach nur das PDF-->
-        <a href="#">Projects</a>  <!--unter href kannst du dann die html seite für deine Projekte verlinken-->
-        <a href="contact.html">Contact</a>
+        <a href="https://leonschropp.github.io/leonschropp/projects">Projects</a>  <!--unter href kannst du dann die html seite für deine Projekte verlinken-->
+        <a href="https://leonschropp.github.io/leonschropp/contact">Contact</a>
     </nav>
 </header>
 <section class="home">
@@ -25,17 +25,20 @@
         <div class="text">
             <h1>Hi, I'm Leon Schropp</h1>
             <div class="intro-text">
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>   
-            </div> 
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>            </div> 
         <div class="projects">
-                <a class="talk" href="#">My Projects</a> <!--unter href kannst du dann die html seite für deine Projekte verlinken-->
+                <a class="talk" href="">My Projects</a> <!--unter href kannst du dann die html seite für deine Projekte verlinken-->
         </div>
         </div>
-        <img src="Leon.jpg" alt="Leon Schropp">
+        <img src="leon.jpg" alt="Leon Schropp">
     </div>
+    <script>
+        var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
+        const form = document.getElementById("email");
+        form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+    </script>
     <div class="home-contacts">
-        <a href="mailto:leon.schropp@t-online.de"><i class='bx bxs-envelope'></i></a>
+        <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
         <a href="tel:+4915757063237"><i class='bx bxs-phone'></i></a>
     </div>
 </section>
