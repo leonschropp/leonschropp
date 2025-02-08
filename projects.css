@@ -1,0 +1,139 @@
+/*hier machst du das styling einer website*/
+/* die sachen, die ich mit class oder id im HTML hinterlegt habe, werden hier designed (farbe, schriftgröße etc.)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+body{
+    background: rgb(5, 19, 30); /*hier kannst du die Hintergrundfarebe und Schriftfarbe anpassen*/
+    color:rgb(231, 220, 220);
+}
+
+.headbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(5, 19, 30);
+    box-shadow: 10px 20px 15px rgb(3, 10, 15);
+}
+
+.logo {
+    font-size: 16px;
+    color: rgb(231, 220, 220);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+
+
+.navbar a{
+    font-size: 16px;
+    color: rgb(231, 220, 220);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 35px;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: rgb(151, 212, 253);
+}
+
+
+
+.text{
+    margin-right: 200px;
+}
+
+
+.home-contacts{
+    position:absolute;
+    bottom: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-contacts a{
+    position: relative;
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(151, 212, 253);
+    border-radius: 50%;
+    font-size: 20px;
+    color:rgb(151, 212, 253);
+    text-decoration: none;
+}
+
+.home-contacts a:hover{
+    color: rgb(5, 19, 30);
+    transition: .1s;
+    background-color: rgb(151, 212, 253);
+    font-weight: 600;
+}
+
+.contact{
+    height: 100vh;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+}
+
+.contact h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color:rgb(151, 212, 253);
+}
+
+
+.contact-content p{
+    font-size: 14px;
+    inset-inline: 20px;
+    color:rgb(236, 225, 225);
+}
+
+
+.Myname{
+    margin-bottom: 10px;
+}
+
+
+.phone {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(236, 225, 225);
+    font-weight: 600;
+    margin-right: 20px;
+
+}
+
+.dates{
+    font-size: 14px;
+    text-decoration: none;
+    color:rgb(236, 225, 225);
+    font-weight: 600;
+}
+
+.contactdates { 
+    float: left; 
+    width: 32%; 
+    margin-right: 5%; 
+    white-space: nowrap; /*verhindert Zeilenumbruch*/
+}
