@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Leon Schropp</title>
+<link rel="stylesheet" href="cv.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+<body>
+    <header class="headbar">
+        <a href="https://leonschropp.github.io/leonschropp/" class="logo">Leon Schropp</a>
+    <nav class="navbar">
+        <a href="https://leonschropp.github.io/leonschropp/">Home</a>
+        <a href="https://leonschropp.github.io/leonschropp/cv">CV</a>  <!--unter href kannst du dann die html seite für deinen CV verlinken/oder gleich einfach nur das PDF-->
+        <a href="https://leonschropp.github.io/leonschropp/projects">Projects</a>  <!--unter href kannst du dann die html seite für deine Projekte verlinken-->
+        <a href="https://leonschropp.github.io/leonschropp/contact" class="active">Contact</a>
+    </nav>
+</header>
+<section class="CV">
+    <div class="Curriculum Vitae">
+        <div class="text">
+            <h1>Academic CV</h1>
+            <div class="Overview">
+            <h2>Overview</h2>
+                <table>
+                    <tr>
+                        <th>Year</th>
+                        <th>University</th>
+                        <th>Degree</th>
+                    </tr>
+                    <tr>
+                        <td>2023-current</td>
+                        <td>LMU Munich</td>
+                        <td>Master's in Mathematics</td>
+                    </tr>
+                    <tr>
+                        <td>2019-2023</td>
+                        <td>LMU Munich</td>
+                        <td>Bachelor's in Mathematics</td>
+                    </tr>
+                    <tr>
+                        <td>2018-2019</td>
+                        <td>LMU Munich</td>
+                        <td>Bachelor's in Chemistry</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="Scholarships">
+                <h2>Scholarships</h2>
+                    <table>
+                        <tr>
+                            <th>Year</th>
+                            <th>Program</th>
+                            <th>Provider</th>
+                            <th>University</th>
+                        </tr>
+                        <tr>
+                            <td>2024</td>
+                            <td>Erasmus+ Mobility-Grant</td>
+                            <td>European Union</td>
+                            <td>Universitet i Bergen, Norway</td>
+                        </tr>
+                        <tr>
+                            <td>2023</td>
+                            <td>Deutschlandstipendium</td>
+                            <td>Bundesministerium für Bildung, Allianz SE</td>
+                            <td>LMU Munich</td>
+                        </tr>
+                        <tr>
+                            <td>2022</td>
+                            <td>Erasmus+ Mobility-Grant</td>
+                            <td>European Union</td>
+                            <td>University of Aberystwyth, Wales</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="Projects">
+                <h2>Projects</h2>
+                <table>
+                    <tr>
+                        <th>Projects</th>
+                        <th>Supervisor</th>
+                        <th>Keywords</th>
+                    </tr>
+                    <tr>
+                        <td>Master Thesis tba.</td>
+                        <td>Markus Land</td>
+                        <td>Etale Homotopy Type of higher stacks, Derived Algebraic Geometry</td>
+                    </tr>
+                    <tr>
+                        <td>Bachelor Thesis: Simplicial and Semisimplicial Sets</td>
+                        <td>Markus Land</td>
+                        <td>Kan Extensions, CW-complexes, model structures</td>
+                    </tr>
+                </table>
+            </div>
+                <div class="Lectures">
+                <h2>Lectures</h2>
+                <table>
+                    <tr>
+                        <th>Lectures</th>
+                        <th>Lecturer</th>
+                    </tr>
+                    <tr>
+                        <td>Algebraic Topology I-III</td>
+                        <td>Simon Gritschacher Markus Land</td>
+                    </tr>
+                    <tr>
+                        <td>Algebraic Geometry I-III</td>
+                        <td>Fabien Morel, Andreas Knutsen</td>
+                    </tr>
+                    <tr>
+                        <td>Homological Algebra</td>
+                        <td>Bjørn Dundas</td>
+                    </tr>
+                    <tr>
+                        <td>Differential Geometry, Gauge Theory</td>
+                        <td>Dieter Kotschick</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script>
+            var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
+            const form = document.getElementById("email");
+            form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+        </script>
+        <div class="home-contacts">
+            <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
+            <a href="tel:+4915757063237"><i class='bx bxs-phone'></i></a>
+        </div>
+    </div>
+</section>
+</body>
+</html>
