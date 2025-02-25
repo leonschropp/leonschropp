@@ -14,6 +14,7 @@ body{
     color:rgb(231, 220, 220);
 }
 
+
 .headbar{
     position: fixed;
     top: 0;
@@ -34,8 +35,6 @@ body{
     text-decoration: none;
     font-weight: 600;
 }
-
-
 
 
 .navbar a{
@@ -81,6 +80,26 @@ body{
     align-items: center; /* Aligns items on the cross-axis */
 }
 
+.home-content a {
+    color: rgb(151, 212, 253);
+    text-decoration: none;
+}
+
+.home-content a:hover {
+    color: rgb(172, 206, 109);
+    text-decoration: underline;
+}
+
+.home-content a:active {
+    color: rgb(172, 206, 109);
+    text-decoration: underline;
+}
+
+.home-content a:visited {
+    color: rgb(99, 187, 247);
+    text-decoration: underline;
+}
+
 .text {
     width: 600px;
 }
@@ -111,6 +130,26 @@ p{
 
 .projects{
     margin-top: 50px;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the text is hidden until it is typed out */
+    border-right: .15em solid rgb(231, 220, 220); /* Creates the blinking cursor effect */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Adds some spacing between the letters */
+    animation: 
+        typewriter 4s steps(40, end), /* Adjust the duration and steps as needed */
+        blink .75s step-end infinite; /* Creates the blinking cursor effect */
 }
 
 .talk {
