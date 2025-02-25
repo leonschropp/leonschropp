@@ -25,8 +25,8 @@
         <div class="text">
             <h1>Hi, I'm Leon Schropp</h1>
             <div class="intro-text">
-                <p>I'm a Master's student in Mathematics at <a href="https://www.mathematik.uni-muenchen.de/">LMU Munich</a>,where I'm writing my <a href="https://leonschropp.github.io/leonschropp/projects">Master's thesis</a> under the supervision of <a href="https://www.mathematik.uni-muenchen.de/personen/professoren/land/index.html">Markus Land</a>. My main interests lie in algebraic topology and algebraic geometry. I'm particulary interested in etale and A^1 Homotopy Theory, algebraic K-Theory and derived algebraic geometry. However, I also enjoy reading about more classical topics.<br>
-                I also work as a Software Engineer at <a href="https://www.mtu.de/?fc=1">MTU Aero Engines</a> on the side and participate in the transition town initiative <a href="https://www.truderingimwandel.de/">Trudering im Wandel</a>.</p> 
+                <p>I'm a Master's student in Mathematics at <a href="https://www.mathematik.uni-muenchen.de/">LMU Munich</a>,where I'm writing my <a href="https://leonschropp.github.io/leonschropp/projects">Master's thesis</a> under the supervision of <a href="https://www.mathematik.uni-muenchen.de/personen/professoren/land/index.html">Markus Land</a>. My main interests lie in algebraic topology and algebraic geometry. I'm particulary interested in etale and A^1 Homotopy Theory, algebraic K-Theory and derived algebraic geometry. However, I also enjoy reading about more classical topics involving classifications and moduli spaces.<br>
+                On the side, I work as a Software Engineer at <a href="https://www.mtu.de/?fc=1">MTU Aero Engines</a> and participate in the transition town initiative <a href="https://www.truderingimwandel.de/">Trudering im Wandel</a>.</p> 
             </div> 
         <div class="projects">
                 <a class="projects" href="https://leonschropp.github.io/leonschropp/projects">My Projects</a>
@@ -39,10 +39,15 @@
         const form = document.getElementById("email");
         form.setAttribute("href", "mailto:".concat(atob(encEmail)));
     </script>
+    <script>
+        var encPhone = "KzQ5MTU3NTcwNjMyMzc=";
+        const phoneForm = document.getElementById("phone");
+        phoneForm.setAttribute("href", "tel:".concat(atob(encPhone)));
+    </script>
     <div class="home-contacts">
         <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
-        <a href="tel:+4915757063237"><i class='bx bxs-phone'></i></a>
+        <a id="phone" href="tel:"><i class='bx bxs-phone'></i></a>
     </div>
 </section>
-</body>
+</body> 
 </html>
