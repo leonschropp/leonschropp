@@ -3,48 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Leon Schropp</title>
-<link rel="stylesheet" href="projects.css">
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <title>Leon Schropp</title>
+    <link rel="stylesheet" href="projects.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
 <body>
     <header class="headbar">
         <a href="https://leonschropp.github.io/leonschropp/" class="logo">Leon Schropp</a>
-    <nav class="navbar">
-        <a href="https://leonschropp.github.io/leonschropp/">Home</a>
-        <a href="https://leonschropp.github.io/leonschropp/cv">CV</a>  <!--unter href kannst du dann die html seite für deinen CV verlinken/oder gleich einfach nur das PDF-->
-        <a href="https://leonschropp.github.io/leonschropp/projects">Projects</a>  <!--unter href kannst du dann die html seite für deine Projekte verlinken-->
-        <a href="https://leonschropp.github.io/leonschropp/contact" class="active">Contact</a>
-    </nav>
-</header>
-<section class="Current Projects">
-    <img src="tafel.jpg" alt="Fun with infty-cats">
-    <div class="Master Thesis">
-        <div class="text">
-            <h3>Master Thesis</h3>
-            <p class="Myname">Leon Schropp</p>
-            <div class="contactdates">
-                <p>Mobile:<br>E-Mail:</p>
+        <nav class="navbar">
+            <a href="https://leonschropp.github.io/leonschropp/">Home</a>
+            <a href="https://github.com/leonschropp/leonschropp/raw/412a9b17bc41562bf1f9758a2d5706631e5d12fb/CV.pdf">CV</a>
+            <a href="https://leonschropp.github.io/leonschropp/projects" class="active">Projects</a>
+            <a href="https://leonschropp.github.io/leonschropp/contact">Contact</a>
+        </nav>
+    </header>
+    <section class="project">
+        <div class="project-content">
+            <div class="text">
+                <h1>Projects</h1>
+                <div class="ma">
+                    <h2>Master Thesis</h2>
+                    <p>I'm currently working on my Master Thesis. A prominent feature will be the etale homotopy type of higher stacks, as introduced by D.Carchedi in <a href="https://arxiv.org/abs/1511.07830">this paper</a>. I'm also planning to work out relations of this construction to the sheaf cohomology of \( \infty - \) topoi, aiming for similar results as in the classical case. Also I would like to present a good number of applications, possibly in log geometry. Originally it was my goal to include relations to \( \mathbb{A}^1 \) Homotopy Theory. However, that might be a bit much for a Master thesis. I will upload a short overview <a href="#">here</a>, soon.</p>
+                </div>
+                <div class="ba">
+                    <h2>Bachelor Thesis</h2>
+                    <p>My bachelor thesis focused on simplicial and semisimplicial sets, Kan extensions, and realization. During this project, I was introduced to model categories and simplicial homotopy th for the first time. Although the results presented in the thesis were largely known, it was a good opportunity to get familiar with the world of categories. Feel free to ask if you would like a copy.</p>
+                </div>
+                <div class="Academic Talks">
+                    <h2>Academic Talks</h2>
+                    <div class="talks">
+                        <h3><a href="https://github.com/leonschropp/leonschropp/raw/5cc0b025a730dc4aa00367855ec1d0c174fe5eba/str-un.pdf">Lurie's Straightening Unstraightening equivalence</a></h3>
+                        <p>held on 5.Nov.2024 in the Seminar "Homotopy Theory"-organised by Markus Land.</p>
+                        <h3><a href="#">\( SK_1 \) of affine curves over finite fields vanishes</a> </h3>
+                        <p>held in 2023 in the Seminar "Algebraic K-Theory"-organised by Andreas Rosenschon.</p>
+                        <h3>Completness of real numbers in MINLOG</h3>
+                        <p>held in 2023 in the Seminar "Constructive analysis with witnesses"-organised by Helmut Schwichtenberg.</p>
+                    </div>
+                </div>
             </div>
-            <div class="contactdates">
-                <p></p>
-            </div>
+            <img src="tafel.jpg" alt="Fun with infty-cats">
         </div>
-        <div class="Academic Talks">
-            <p> Lurie's Straightening Unstraightening Equivalence</p>
-        </div>
-        <script>
-            var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
-            const form = document.getElementById("email");
-            form.setAttribute("href", "mailto:".concat(atob(encEmail)));
-        </script>
-        <div class="home-contacts">
-            <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
-            <a href="tel:+4915757063237"><i class='bx bxs-phone'></i></a>
-        </div>
+    </section>
+    <script>
+        var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
+        const form = document.getElementById("email");
+        form.setAttribute("href", "mailto:".concat(atob(encEmail)));
+    </script>
+    <script>
+        var encPhone = "KzQ5MTU3NTcwNjMyMzc=";
+        const phoneForm = document.getElementById("phone");
+        phoneForm.setAttribute("href", "tel:".concat(atob(encPhone)));
+    </script>
+    <div class="home-contacts">
+        <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
+        <a id="phone" href="tel:"><i class='bx bxs-phone'></i></a>
     </div>
-</section>
 </body>
 </html>

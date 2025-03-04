@@ -35,9 +35,6 @@ body{
     font-weight: 600;
 }
 
-
-
-
 .navbar a{
     font-size: 16px;
     color: rgb(231, 220, 220);
@@ -51,69 +48,91 @@ body{
     color: rgb(151, 212, 253);
 }
 
-
-
-
-
-.home{
-    height: 100vh;
-    padding: 0 10%;
-    display: flex;  
+.project {
+    padding: 200px 10% 0; /* Add top padding to account for the fixed navbar */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: flex-start; /* Aligns items on the cross-axis */
 }
 
-.home-content {
-    display:flex;
+.project-content {
+    display: flex;
     justify-content: space-between;
+    align-items: flex-start; /* Aligns items on the cross-axis */
+    width: 100%; /* Ensures the content takes the full width */
 }
 
-.home-content h1{
+.project-content a {
+    color: rgb(151, 212, 253);
+    text-decoration: none;
+}
+
+.project-content a:hover {
+    color: rgb(172, 206, 109);
+    text-decoration: underline;
+}
+
+.project-content a:active {
+    color: rgb(172, 206, 109);
+    text-decoration: underline;
+}
+
+.project-content a:visited {
+    color: rgb(99, 187, 247);
+    text-decoration: underline;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px; /* Adds some space between the text and the image */
+}
+
+.project-content img {
+    flex-shrink: 0; /* Prevents the image from shrinking if space is tight */
+    width: 300px;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image does not overflow */
+    box-shadow: 10px 20px 15px rgb(3, 10, 15);
+    border-radius: 20px;
+}
+
+.project-content h1 {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
-.home-content h3{
-    font-size: 24px;
+.project-content h2 {
+    font-size: 32px;
     font-weight: 700;
-    margin-bottom: 30px;
-    color:rgb(151, 212, 253);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(151, 212, 253);
 }
 
-.home-content {
-    justify-content: space-between;
-    align-items: center; /* Aligns items on the cross-axis */
+.project-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(151, 212, 253);
 }
 
 .text {
     width: 600px;
 }
 
-.home-content img {
-    flex-shrink: 0; /* Prevents the image from shrinking if space is tight */
-    width: 300px;
-    height: 300px;
-    box-shadow: 10px 20px 15px rgb(3, 10, 15);
-    border-radius: 20px;
-}
-
-
-p{
+p {
     font-size: 14px;
     margin-bottom: 10px;
-    color:rgb(231, 220, 220);
-    padding: 0
+    color: rgb(231, 220, 220);
+    padding: 0;
 }
 
-
-.text{
+.text {
     flex: 1;
-    margin-right: 150px;
-    margin-top: -50px; 
-    }
-
-
-.projects{
-    margin-top: 50px;
+    margin-right: 20px;
+    margin-top: -50px;
 }
 
 .talk {
@@ -125,9 +144,8 @@ p{
     padding: 8px;
     font-weight: bold;
     margin-right: 30px;
-    background:rgb(151, 212, 253);
+    background: rgb(151, 212, 253);
 }
-
 
 .talk:hover {
     color: rgb(151, 212, 253);
@@ -138,17 +156,18 @@ p{
     background-color: transparent;
 }
 
-.home-contacts{
-    position:absolute;
+.home-contacts {
+    position: absolute;
+    left: 10%;
     bottom: 40px;
     width: 100px;
     display: flex;
     justify-content: space-between;
 }
 
-.home-contacts a{
+.home-contacts a {
     position: relative;
-    display: inline flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -157,11 +176,11 @@ p{
     border: 2px solid rgb(151, 212, 253);
     border-radius: 50%;
     font-size: 20px;
-    color:rgb(151, 212, 253);
+    color: rgb(151, 212, 253);
     text-decoration: none;
 }
 
-.home-contacts a:hover{
+.home-contacts a:hover {
     color: rgb(5, 19, 30);
     transition: .1s;
     background-color: rgb(151, 212, 253);
