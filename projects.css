@@ -158,7 +158,7 @@ p {
 
 .home-contacts {
     position: absolute;
-    left: 5%;
+    right: 20%;
     bottom: 40px;
     width: 100px;
     display: flex;
