@@ -21,30 +21,31 @@
 </header>
 <section class="contact">
     <div class="contact-content">
-        <div class="text">
             <h1>Get in touch</h1>
+            <div style="height: 25px;"></div> 
+            <div class="text">
             <p class="Myname">Leon Schropp</p>
             <div class="contactdates">
                 <p>Mobile:<br>University E-Mail:<br>Personal E-Mail:</p>
             </div>
+            <script>
+                var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
+                const persform = document.getElementById("persemail");
+                persform.setAttribute("href", "mailto:".concat(atob(encEmail)));
+            </script>
+            <script>
+                var encEmail = "bGVvbi5zY2hyb3BwQGNhbXB1cy5sbXUuZGU=";
+                const uniform = document.getElementById("uniemail");
+                uniform.setAttribute("href", "mailto:".concat(atob(encEmail)));
+            </script>
+            <script>
+                var encPhone = "KzQ5MTU3NTcwNjMyMzc=";
+                const phoneForm = document.getElementById("phone");
+                phoneForm.setAttribute("href", "tel:".concat(atob(encPhone)));
+            </script>
             <div class="contactdates">
-                 <p>+49 157 570 632 37 <br>forename.lastname@campus.lmu.de</p>forename.lastname@t-online.de</p>               
-                <p></p>
+                 <p><a id="phone" href="tel:" >+49 157 570 632 37</a><br><a id="uniemail" href="mailto:">leon(dot)schropp-at-campus(dot)lmu(dot)de</a><br><a id="persemail" href="mailto:">leon(dot)schropp-at-t(minus)online(dot)de</a> </p>               
             </div>
-        </div>
-        <script>
-            var encEmail = "bGVvbi5zY2hyb3BwQHQtb25saW5lLmRl";
-            const form = document.getElementById("email");
-            form.setAttribute("href", "mailto:".concat(atob(encEmail)));
-        </script>
-        <script>
-            var encPhone = "KzQ5MTU3NTcwNjMyMzc=";
-            const phoneForm = document.getElementById("phone");
-            phoneForm.setAttribute("href", "tel:".concat(atob(encPhone)));
-        </script>
-        <div class="home-contacts">
-            <a id="email" href="mailto:"><i class='bx bxs-envelope'></i></a>
-            <a id="phone" href="tel:"><i class='bx bxs-phone'></i></a>
         </div>
     </div>
 </section>

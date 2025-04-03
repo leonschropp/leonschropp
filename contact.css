@@ -57,37 +57,6 @@ body{
     margin-right: 200px;
 }
 
-
-.home-contacts{
-    position:absolute;
-    bottom: 40px;
-    width: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.home-contacts a{
-    position: relative;
-    display: inline flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid rgb(151, 212, 253);
-    border-radius: 50%;
-    font-size: 20px;
-    color:rgb(151, 212, 253);
-    text-decoration: none;
-}
-
-.home-contacts a:hover{
-    color: rgb(5, 19, 30);
-    transition: .1s;
-    background-color: rgb(151, 212, 253);
-    font-weight: 600;
-}
-
 .contact{
     height: 100vh;
     padding: 0 10%;
@@ -95,45 +64,73 @@ body{
     align-items: center;
 }
 
-.contact h3{
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color:rgb(151, 212, 253);
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-
-.contact-content p{
-    font-size: 14px;
-    inset-inline: 20px;
-    color:rgb(236, 225, 225);
+@keyframes cursor-blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: rgb(231, 220, 220); }
 }
 
+@keyframes cursor-fade {
+    from { border-color: rgb(231, 220, 220); }
+    to { border-color: transparent; }
+}
+
+.contact h1 {
+    font-size: 40px;
+    font-weight: 1500;
+    margin-bottom: 40px;
+    overflow: hidden; /* Ensures the text is hidden until it is typed out */
+    border-right: .15em solid rgb(231, 220, 220); /* Creates the blinking cursor effect */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Adds some spacing between the letters */
+    animation: 
+        typewriter 4s steps(40, end), /* Adjust the duration and steps as needed */
+        cursor-blink .75s step-end infinite,
+        cursor-fade 1s step-end 4s forwards; 
+}
+
+.contact-content a {
+    color: rgb(151, 212, 253);
+    text-decoration: none;
+}
+
+.contact-content a:hover {
+    color: rgb(172, 206, 109);
+    text-decoration: underline;
+}
+
+.contact-content a:active {
+    color: rgb(172, 206, 109);
+    text-decoration: underline;
+}
+
+.contact-content a:visited {
+    color: rgb(99, 187, 247);
+    text-decoration: underline;
+}
 
 .Myname{
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 40px;
+    color:rgb(231, 220, 220);
 }
 
-
-.phone {
-    font-size: 14px;
-    text-decoration: none;
-    color: rgb(236, 225, 225);
-    font-weight: 600;
-    margin-right: 20px;
-
-}
-
-.dates{
-    font-size: 14px;
-    text-decoration: none;
-    color:rgb(236, 225, 225);
-    font-weight: 600;
-}
 
 .contactdates { 
     float: left; 
     width: 32%; 
     margin-right: 5%; 
     white-space: nowrap; /*verhindert Zeilenumbruch*/
+}
+
+p{
+    font-size: 18px;
+    inset-inline: 20px;
+    color:rgb(231, 220, 220);
+    padding: 0
 }
